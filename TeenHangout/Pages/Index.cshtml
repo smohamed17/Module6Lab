@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Teen Hangout";
+}
+
+@* We are using the bootstrap method, we are configuring the webapp to our liking.  *@
+<div class="container">
+
+    <h1 class="text-center">Teen Hangout</h1>
+    <p class="text-center">Your virtual space to connect!</p>
+
+    @* We are displaying the members to the webapp.  *@
+    <h2>Our Members</h2>
+    @foreach (var user in Model.Users)
+    {
+        <div class="alert alert-secondary">
+            <strong>@user.Username</strong>, Age: @user.Age, Favorite Color: @user.FavoriteColor
+        </div>
+    }
+
+    @* Displaying the webapp's posts currently. *@
+    <h2>Recent Posts</h2>
+    @foreach (var post in Model.Posts)
+    {
+        <div class="alert alert-info">
+            <strong>@post.Username</strong>
+            <p>@post.Content</p>
+            <small>Likes: @post.Likes</small>
+        </div>
+    }
+
+    @* Highlighting the most popular post around. *@
+    <h2>Popular Posts (20+ Likes)</h2>
+    @foreach (var post in Model.Posts)
+    {
+        @* if the post likes exceed the amount of likes, it won't display the @  *@
+        if (post.Likes >= 20)
+        {
+            <div class="alert alert-success">
+                <strong>@post.Username</strong>
+                <p>@post.Content</p>
+                <small>Likes: @post.Likes</small>
+            </div>
+        }
+    }
+
+</div>
