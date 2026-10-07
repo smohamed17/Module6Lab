@@ -1,0 +1,7 @@
+/workspaces/Module6Lab/TeenHangout/bin/Release/net10.0/publish/TeenHangout
+/workspaces/Module6Lab/TeenHangout/bin/Release/net10.0/publish/appsettings.Development.json
+/workspaces/Module6Lab/TeenHangout/bin/Release/net10.0/publish/appsettings.json
+/workspaces/Module6Lab/TeenHangout/bin/Release/net10.0/publish/TeenHangout.dll
+/workspaces/Module6Lab/TeenHangout/bin/Release/net10.0/publish/TeenHangout.deps.json
+/workspaces/Module6Lab/TeenHangout/bin/Release/net10.0/publish/TeenHangout.runtimeconfig.json
+/workspaces/Module6Lab/TeenHangout/bin/Release/net10.0/publish/TeenHangout.pdb

@@ -11,7 +11,9 @@ public class IndexModel : PageModel
     [
         new("MusicLover", 15, "Purple"),
         new("GamerGirl", 16, "Red"),
-        new("BookwormBen", 15, "Yellow")
+        new("BookwormBen", 15, "Yellow"),
+        new("DrawingSteve", 17, "Blue"),
+        new("SoccerJohanna", 15, "Grey")
     ];
 
     // using the Post[], to figure out the posts that needs to be created.
@@ -20,6 +22,8 @@ public class IndexModel : PageModel
     [
         new("GamerGirl", "Anyone want to play online later?", 30),
         new("BookwormBen", "Reading the best book ever!", 15),
-        new("MusicLover", "Concert next week! So excited!", 22)
+        new("MusicLover", "Concert next week! So excited!", 22),
+        new("DrawingSteve","I drew this wonderful picture of a cat!", 3),
+        new("SoccerJohanna", "I enjoy watching Lionel Messi play for Inter Miami", 34)
     ];
 }
